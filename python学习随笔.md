@@ -147,3 +147,19 @@ with open("/Users/zhangwenmeng/Public/code/test/test.json","w") as file:
 with open("/Users/zhangwenmeng/Public/code/test/test.json") as file:
 	nums = json.load(file)
 	print(nums)
+```
+
+###列表生成式
+```
+写列表生成式时，把要生成的元素x * x放到前面，后面跟for循环，就可以把list创建出来，十分有用，多写几次，很快就可以熟悉这种语法。
+
+for循环后面还可以加上if判断，这样我们就可以筛选出仅偶数的平方：
+
+>>> [x * x for x in range(1, 11) if x % 2 == 0]
+[4, 16, 36, 64, 100]
+还可以使用两层循环，可以生成全排列：
+
+>>> [m + n for m in 'ABC' for n in 'XYZ']
+['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+```
+
